@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="main-body">
+    <header>
+        <div class="head">
+            <h3>WeatherApp</h3>
+        </div>
+    </header>
+    <main>
+        <!-- Details -->
+        <div class="detailsContainer">
+            <!-- SearchBar -->
+            <div class="searchbar">
+                <input id="input_text" type="search" class="inputText" placeholder="Enter City" aria-label="Search"
+                    aria-describedby="button-addon2">
+                <button type="button" class="searchButton" id="button-addon2">Search</button>
+            </div>
+            <!-- Location -->
+            <div class="location" id="location">
+                <h3 class="locText">Location: </h3>
+                <span class="locText"></span>
+            </div>
+            
+            <!-- Weather Details -->
+            <div id="details" class="details">
+                <!-- Weather Status, Date & Time -->
+                <div id="status" class="status">
+                    <img id="icon" class="icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <span id="stat" class="stat"></span>
+                    <span id="dt" class="dt"></span>
+                </div>
+                <div class="temp">
+                    <h1 class="temperature" id="temperature"></h1>
+                    <h2 class="feels-like">Feels like: <span id="feels-like">00</span>&degC</h2>
+                </div>
+                <table class="table">
+                    <tr id="table">
+                        <th class="abc">Humidity</th>
+                        <td id="humidity" class="data">_</td>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Pressure</th>
+                        <td id="pressure" class="data">_</td>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Wind Speed</th>
+                        <td id="speed" class="data">_</td>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Sunrise</th>
+                        <td id="sunrise" class="data">_</td>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Sunset</th>
+                        <td id="sunset" class="data">_</td>
+                    </tr>
+                </table>
+
+                <table class="table">
+                    <tr id="table">
+                        <th class="abc">Current Data</th>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Air Quality Rating</th>
+                        <td id="aqi" class="data">_</td>
+                    </tr>
+                    <tr id="table">
+                        <th class="abc">Quality</th>
+                        <td id="quality" class="data">_</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Forecast -->
+            <div class="forecast" id="forcast">
+                <div class="forecast1" id="0">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="forTable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="1">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="2">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="3">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="4">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="5">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="forecast1" id="6">
+                    <h2></h2>
+                    <img class="forImg" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" srcset="">
+                    <table class="fortable">
+                        <tr id="table" class="">
+                            <th class="thd">Max</th>
+                            <td class="thd">_</td>
+                        </tr>
+                        <tr id="table" class="">
+                            <th>Min</th>
+                            <td>_</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
